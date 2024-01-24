@@ -9,7 +9,7 @@ Go to https://trello.com/app-key and log in to get your API key.
 Generate a token on the same page.
 
 ##### Re
-place 'YOUR_API_KEY' and 'YOUR_TOKEN' with your actual Trello API key and token.
+place 'TRELLO_API_KEY' and 'TRELLO_TOKEN' with your actual Trello API key and token.
 
 # Next Development Steps
 1. Add error handling for API responses.
