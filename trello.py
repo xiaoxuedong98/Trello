@@ -1,10 +1,17 @@
 import requests
 import sys
+from dotenv import load_dotenv
+import os
+# Constants
+
+
+load_dotenv()  # This loads the environment variables from .env
 
 # Constants
-API_KEY = 'YOUR_API_KEY'
-TOKEN = 'YOUR_TOKEN'
+API_KEY = os.getenv('TRELLO_API_KEY')
+TOKEN = os.getenv('TRELLO_TOKEN')
 BASE_URL = 'https://api.trello.com/1/'
+
 
 def create_card(board_id, list_id, card_name, card_desc, labels, comment):
     url = f"{BASE_URL}cards"
